@@ -2,5 +2,5 @@ language: c
 os: osx
 compiler:
     - clang
-    - gcc
+install: make get-deps
 script: make -C tests test
