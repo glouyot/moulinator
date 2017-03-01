@@ -6,7 +6,7 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:03:14 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 14:39:45 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 15:47:24 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,15 @@ int	bzero_basic_1(void);
 int	bzero_zero_value(void);
 int	bzero_null(void);
 int	bzero_memory_read(void);
+int	isalnum_launcher(void);
+int	isalnum_basic(void);
+int	isalpha_launcher(void);
+int	isalpha_basic(void);
+int	isascii_launcher(void);
+int	isascii_basic(void);
+int	isdigit_launcher(void);
+int	isdigit_basic(void);
+int	isprint_launcher(void);
+int	isprint_basic(void);
 #endif
+

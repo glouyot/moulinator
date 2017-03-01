@@ -6,7 +6,7 @@
 #    By: glouyot <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/01 11:07:56 by glouyot           #+#    #+#              #
-#    Updated: 2017/03/01 14:39:55 by glouyot          ###   ########.fr        #
+#    Updated: 2017/03/01 15:46:18 by glouyot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,8 +36,18 @@ OBJECTS :=	main.o\
 			bzero/01_bzero_basic_1.o\
 			bzero/02_bzero_zero_value.o\
 			bzero/03_bzero_null.o\
-			bzero/04_bzero_memory_read.o
-
+			bzero/04_bzero_memory_read.o\
+			isalnum/00_launcher.o\
+			isalnum/01_isalnum_basic.o\
+			isalpha/00_launcher.o\
+			isalpha/01_isalpha_basic.o\
+			isascii/00_launcher.o\
+			isascii/01_isascii_basic.o\
+			isdigit/00_launcher.o\
+			isdigit/01_isdigit_basic.o\
+			isprint/00_launcher.o\
+			isprint/01_isprint_basic.o\
+	
 ifneq ($(shell make -q -C $(FRAMEWORK_PATH); echo $$?), 0)
 .PHONY: $(FRAMEWORK_PATH)/$(FRAMEWORK_NAME)
 endif
