@@ -6,7 +6,7 @@
 #    By: glouyot <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/01 11:07:56 by glouyot           #+#    #+#              #
-#    Updated: 2017/03/01 15:46:18 by glouyot          ###   ########.fr        #
+#    Updated: 2017/03/01 17:43:37 by glouyot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,11 @@ OBJECTS :=	main.o\
 			isdigit/01_isdigit_basic.o\
 			isprint/00_launcher.o\
 			isprint/01_isprint_basic.o\
+			memalloc/00_launcher.o\
+			memalloc/01_memalloc_basic_1.o\
+			memalloc/02_memalloc_basic_2.o\
+			memalloc/03_memalloc_too_big.o\
+			memalloc/04_memalloc_size.o\
 	
 ifneq ($(shell make -q -C $(FRAMEWORK_PATH); echo $$?), 0)
 .PHONY: $(FRAMEWORK_PATH)/$(FRAMEWORK_NAME)

@@ -6,13 +6,13 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:03:14 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 15:47:24 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 17:43:56 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_UNIT_TEST_H
 # define LIBFT_UNIT_TEST_H
-
+# include <limits.h>
 # include "./libft/libft.h"
 
 # define	BSIZE		0xF00
@@ -41,5 +41,10 @@ int	isdigit_launcher(void);
 int	isdigit_basic(void);
 int	isprint_launcher(void);
 int	isprint_basic(void);
+int	memalloc_launcher(void);
+int	memalloc_basic_1(void);
+int	memalloc_basic_2(void);
+int	memalloc_too_big(void);
+int	memalloc_size(void);
 #endif
 

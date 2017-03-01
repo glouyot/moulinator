@@ -6,7 +6,7 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:28:22 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 15:48:47 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 16:40:21 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,10 @@ int		main(void)
 		print_red(1, "test failled\n", 13);
 	else
 		print_green(1, "test passed\n", 12);
-	
+	if (memalloc_launcher() && ++ret)
+		print_red(1, "test failled\n", 13);
+	else
+		print_green(1, "test passed\n", 12);
 	
 	
 	
