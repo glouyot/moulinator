@@ -6,7 +6,7 @@
 #    By: glouyot <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/01 11:07:56 by glouyot           #+#    #+#              #
-#    Updated: 2017/03/01 13:09:26 by glouyot          ###   ########.fr        #
+#    Updated: 2017/03/01 14:28:57 by glouyot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,14 +24,17 @@ ARGS := ./libft/libft.a
 
 OBJECTS :=	main.o\
 			atoi/00_launcher.o\
-			atoi/01_atoi_basic_1.c\
-			atoi/02_atoi_basic_2.c\
-			atoi/03_atoi_min.c\
-			atoi/04_atoi_max.c\
-			atoi/05_atoi_out.c\
-			atoi/06_atoi_thousand.c\
-			atoi/07_atoi_space.c\
-			atoi/08_atoi_letter.c
+			atoi/01_atoi_basic_1.o\
+			atoi/02_atoi_basic_2.o\
+			atoi/03_atoi_min.o\
+			atoi/04_atoi_max.o\
+			atoi/05_atoi_out.o\
+			atoi/06_atoi_thousand.o\
+			atoi/07_atoi_space.o\
+			atoi/08_atoi_letter.o\
+			bzero/00_launcher.o\
+			bzero/01_bzero_basic_1.o\
+			bzero/02_bzero_zero_value.o
 
 ifneq ($(shell make -q -C $(FRAMEWORK_PATH); echo $$?), 0)
 .PHONY: $(FRAMEWORK_PATH)/$(FRAMEWORK_NAME)

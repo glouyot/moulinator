@@ -6,13 +6,12 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:22:02 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 13:14:57 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 14:12:57 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
 #include "../libft_unit_test.h"
-#include <stdlib.h>
 
 int	atoi_launcher(void)
 {
