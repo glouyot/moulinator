@@ -6,7 +6,7 @@
 #    By: glouyot <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/01 11:07:56 by glouyot           #+#    #+#              #
-#    Updated: 2017/03/01 14:28:57 by glouyot          ###   ########.fr        #
+#    Updated: 2017/03/01 14:39:55 by glouyot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,9 @@ OBJECTS :=	main.o\
 			atoi/08_atoi_letter.o\
 			bzero/00_launcher.o\
 			bzero/01_bzero_basic_1.o\
-			bzero/02_bzero_zero_value.o
+			bzero/02_bzero_zero_value.o\
+			bzero/03_bzero_null.o\
+			bzero/04_bzero_memory_read.o
 
 ifneq ($(shell make -q -C $(FRAMEWORK_PATH); echo $$?), 0)
 .PHONY: $(FRAMEWORK_PATH)/$(FRAMEWORK_NAME)

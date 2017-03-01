@@ -6,7 +6,7 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 14:15:12 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 14:27:19 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 14:39:35 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ int	bzero_launcher(void)
 	load_test(&testlist, "Basic test 1   ", &bzero_basic_1,
 			create_signal_code(0, 0));
 	load_test(&testlist, "Zero value test", &bzero_zero_value,
+			create_signal_code(0, 0));
+	load_test(&testlist, "Null test      ", &bzero_null,
+			create_signal_code(SIGSEGV, 0));
+	load_test(&testlist, "Memory out     ", &bzero_memory_read,
 			create_signal_code(0, 0));
 	return (launch_test(&testlist));
 }

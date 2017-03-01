@@ -6,7 +6,7 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:03:14 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 14:29:14 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 14:39:45 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,6 @@ int	atoi_letter(void);
 int	bzero_launcher(void);
 int	bzero_basic_1(void);
 int	bzero_zero_value(void);
+int	bzero_null(void);
+int	bzero_memory_read(void);
 #endif
