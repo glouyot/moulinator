@@ -6,12 +6,13 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:22:02 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 12:04:23 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 13:14:57 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
 #include "../libft_unit_test.h"
+#include <stdlib.h>
 
 int	atoi_launcher(void)
 {
@@ -30,6 +31,10 @@ int	atoi_launcher(void)
 	load_test(&testlist, "Out test     ", &atoi_out,
 			create_signal_code(0, 0));
 	load_test(&testlist, "Thousand test", &atoi_thousand,
+			create_signal_code(0, 0));
+	load_test(&testlist, "Space test   ", &atoi_space,
+			create_signal_code(0, 0));
+	load_test(&testlist, "Letter test  ", &atoi_letter,
 			create_signal_code(0, 0));
 	return (launch_test(&testlist));
 }

@@ -6,13 +6,13 @@
 /*   By: glouyot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/01 11:28:22 by glouyot           #+#    #+#             */
-/*   Updated: 2017/03/01 11:47:31 by glouyot          ###   ########.fr       */
+/*   Updated: 2017/03/01 13:19:02 by glouyot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libunit.h"
 #include "libft_unit_test.h"
-
+#include <stdio.h>
 int		main(void)
 {
 	int	ret;

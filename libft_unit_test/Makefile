@@ -6,7 +6,7 @@
 #    By: glouyot <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/01 11:07:56 by glouyot           #+#    #+#              #
-#    Updated: 2017/03/01 12:03:42 by glouyot          ###   ########.fr        #
+#    Updated: 2017/03/01 13:09:26 by glouyot          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,9 @@ OBJECTS :=	main.o\
 			atoi/03_atoi_min.c\
 			atoi/04_atoi_max.c\
 			atoi/05_atoi_out.c\
-			atoi/06_atoi_thousand.c
+			atoi/06_atoi_thousand.c\
+			atoi/07_atoi_space.c\
+			atoi/08_atoi_letter.c
 
 ifneq ($(shell make -q -C $(FRAMEWORK_PATH); echo $$?), 0)
 .PHONY: $(FRAMEWORK_PATH)/$(FRAMEWORK_NAME)
